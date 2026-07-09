@@ -1,0 +1,254 @@
+/* navbar.css - Modernized */
+
+.navabar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.logo-container h4 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(90deg, #ff8c00, #ff4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links p {
+  margin: 0;
+}
+
+.nav-links a {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 1.05rem;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Style for the Login button */
+.login-btn {
+  background: transparent !important;
+  color: #FF7E40 !important;
+  border: 2px solid #FF7E40 !important;
+  border-radius: 25px;
+  padding: 8px 24px !important;
+  font-size: 0.95rem;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.login-btn::after {
+  display: none !important;
+  /* Forces the removal of the hover underline */
+}
+
+.login-btn-container:hover .login-btn,
+.login-btn:hover {
+  background: #FF7E40 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 126, 64, 0.25) !important;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 10px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content a::after {
+  display: none;
+  /* remove hover line */
+}
+
+.dropdown-content a:hover {
+  background-color: var(--bg-color);
+  color: var(--primary);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .navabar {
+    padding: 0 15px;
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .dropdown-content {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container h4 {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .dropbtn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
+
+/* services.css (keeping services styles temporarily until refactored) */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.services-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.service p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}

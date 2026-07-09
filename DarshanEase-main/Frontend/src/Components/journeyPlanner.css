@@ -1,0 +1,183 @@
+.journey-planner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: -20px;
+    /* Reduced negative margin so it floats above mantra, not into parallax */
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.journey-planner-glass {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.95);
+    /* Extremely bright/crisp light glass */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 140, 0, 0.4);
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    animation: fadeInSlideUp 0.8s ease-out 0.5s both;
+}
+
+[data-theme='dark'] .journey-planner-glass {
+    /* Brightened dark mode glass to avoid murky look */
+    background: linear-gradient(135deg, rgba(40, 50, 70, 0.95), rgba(20, 30, 45, 0.98));
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.planner-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+/* Tabs */
+.planner-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.tab-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 140, 0, 0.4);
+}
+
+.tab-btn.active {
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 126, 64, 0.4);
+}
+
+/* Form Layout */
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.input-wrapper {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.input-wrapper label svg {
+    color: #ff8c00;
+}
+
+.input-wrapper input {
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-wrapper input:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.15);
+}
+
+/* CTA Button */
+.button-wrapper {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 126, 64, 0.3);
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 126, 64, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-wrapper {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .planner-tabs {
+        flex-wrap: wrap;
+    }
+
+    .journey-planner-container {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+}

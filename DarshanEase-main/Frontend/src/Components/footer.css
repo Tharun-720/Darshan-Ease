@@ -1,0 +1,162 @@
+.footer {
+    background-color: var(--surface-dark);
+    /* Slightly darker surface for distinction */
+    color: var(--text-color);
+    padding: 60px 20px 20px;
+    /* Keep original padding, or adjust if 0 is intended */
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+    font-family: inherit;
+    /* Added from instruction */
+    position: relative;
+    /* Added from instruction */
+    overflow: hidden;
+    /* Added from instruction */
+}
+
+/* Optional subtle top glow for the footer */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    opacity: 0.5;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand h2 {
+        justify-content: center;
+    }
+
+    .newsletter-form {
+        justify-content: center;
+    }
+}
+
+.footer-brand h2 {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-contact p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+    border-color: var(--primary);
+}
+
+.newsletter-form button {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 126, 64, 0.4);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+[data-theme='dark'] .footer-container {
+    background: var(--surface);
+}

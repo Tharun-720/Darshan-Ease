@@ -1,0 +1,87 @@
+.mantra-container {
+    overflow: hidden;
+    background: var(--surface);
+    border-top: 1px solid rgba(255, 140, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+    padding: 15px 0;
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Subtle fade edges so text doesn't clash with screen bounds */
+.mantra-container::before,
+.mantra-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mantra-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--surface), transparent);
+}
+
+.mantra-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--surface), transparent);
+}
+
+.mantra-scroll {
+    display: flex;
+    width: fit-content;
+    animation: scrollX 40s linear infinite;
+}
+
+.mantra-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.mantra-scroll:hover {
+    animation-play-state: paused;
+}
+
+.mantra-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.4);
+}
+
+.mantra-icon {
+    color: #ffca28;
+    margin: 0 25px;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 5px rgba(255, 202, 40, 0.6));
+}
+
+@keyframes scrollX {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mantra-text {
+        font-size: 1.1rem;
+    }
+
+    .mantra-icon {
+        margin: 0 15px;
+    }
+}

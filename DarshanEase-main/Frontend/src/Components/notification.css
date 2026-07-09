@@ -1,0 +1,131 @@
+.notification-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.notification-bell {
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.2s ease;
+}
+
+.notification-bell:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: #ff4500;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    width: 320px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-header {
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    color: white;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+}
+
+.notification-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.no-notifications {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    margin: 0;
+    font-style: italic;
+}
+
+.notification-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item p {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.notification-item.unread {
+    background: rgba(255, 140, 0, 0.05);
+    border-left: 4px solid #ff8c00;
+}
+
+.mark-read-btn {
+    background: none;
+    border: none;
+    color: #ff8c00;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mark-read-btn:hover {
+    text-decoration: underline;
+}

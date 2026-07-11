@@ -244,7 +244,7 @@ Distributed under the **ISC License**. See `LICENSE.txt` for more information.
 
 ## 👨‍💻 Author
 
-**Krishna Mohan Kumar** *B.Tech Computer Science Student at Valency College, Bhopal* *Full Stack Developer | Tech Enthusiast*
+**Tharun Reddy** *B.Tech Data Science  Student at Anantha Lakshmi institute* *Full Stack Developer | Tech Enthusiast*
 
 Passionate about building **technology solutions that merge spirituality and innovation.**
 

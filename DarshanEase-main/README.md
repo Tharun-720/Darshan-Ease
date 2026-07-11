@@ -11,11 +11,6 @@
     <a href="#noDocsRightNow"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/GozuRtBVmJk?si=YfQ5BDaxbVjowcki">View Demo</a>
-    ·
-    <a href="https://github.com/Deo-Mohan/DarshanEase/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Deo-Mohan/DarshanEase/issues">Request Feature</a>
   </p>
 </div>
 

@@ -152,8 +152,8 @@ Follow these steps to set up the project locally on your machine.
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/Deo-Mohan/DarshanEase.git](https://github.com/Deo-Mohan/DarshanEase.git)
-cd DarshanEase
+git clone [https://github.com/Tharun-720/Darshan-Ease.git](https://github.com/Tharun-720/Darshan-Ease.git)
+cd DarshanEase-main
 ```
 
 **2. Setup and Start the Frontend**

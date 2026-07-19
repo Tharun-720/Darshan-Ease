@@ -14,6 +14,30 @@ DarshanEase is a Full Stack MERN web application developed to simplify temple da
 
 ---
 
+# 🔗 Project Links
+
+## 💻 Source Code
+
+📦 **Google Drive Source Code**
+
+https://drive.google.com/file/d/1hvdIJ_arqvSM0VX93IHC_dNhHOmI3hHP/view?usp=drive_link
+
+---
+
+## 🎥 Demo Video
+
+▶️ **Watch Project Demo**
+
+https://drive.google.com/file/d/1RbY05i_P-M8FwDugDARIzc1PsYKSY1qX/view?usp=drive_link
+
+---
+
+## 🌐 GitHub Repository
+
+https://github.com/Tharun-720/Darshan-Ease
+
+---
+
 # ✨ Features
 
 - 👤 User Registration & Login
@@ -22,7 +46,7 @@ DarshanEase is a Full Stack MERN web application developed to simplify temple da
 - 📖 Booking History
 - 🚌 Journey Planner
 - 🔔 Notifications
-- 📱 Responsive UI
+- 📱 Responsive User Interface
 - 🗄️ MongoDB Database
 - ⚡ MERN Stack Architecture
 
@@ -91,39 +115,17 @@ cd Darshan-Ease
 npm install
 ```
 
-### Run Backend
+### Start Backend
 
 ```bash
 npm start
 ```
 
-### Run Frontend
+### Start Frontend
 
 ```bash
 npm run dev
 ```
-
----
-
-# 💻 Source Code
-
-📦 **Google Drive Source Code**
-
-🔗 **https://drive.google.com/file/d/1hvdIJ_arqvSM0VX93IHC_dNhHOmI3hHP/view?usp=drive_link**
-
----
-
-# 🎥 Project Demo Video
-
-▶️ **Watch the Demo Video**
-
-🔗 **https://drive.google.com/file/d/1RbY05i_P-M8FwDugDARIzc1PsYKSY1qX/view?usp=drive_link**
-
----
-
-# 🌐 GitHub Repository
-
-🔗 **https://github.com/Tharun-720/Darshan-Ease**
 
 ---
 

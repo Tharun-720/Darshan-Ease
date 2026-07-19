@@ -1,31 +1,30 @@
 # 🛕 DarshanEase
 ## Smart Temple Darshan Booking System Using MERN Stack
 
-![MERN](https://img.shields.io/badge/MERN-Full%20Stack-success?style=for-the-badge)
-![React](https://img.shields.io/badge/React-JS-61DAFB?style=for-the-badge&logo=react)
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
+![MERN](https://img.shields.io/badge/Stack-MERN-success?style=for-the-badge)
+![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=for-the-badge&logo=mongodb)
 
 ---
 
-# 📖 About the Project
+# 📖 About
 
-DarshanEase is a Full Stack MERN web application developed to simplify temple darshan booking. It provides devotees with a single platform to explore temples, book darshan tickets, plan their journey, and manage bookings through a modern, responsive interface.
+DarshanEase is a Full Stack MERN web application developed to simplify temple darshan booking. It enables devotees to register, log in, explore temple information, book darshan tickets, and manage bookings through a modern and user-friendly interface.
 
 ---
 
 # ✨ Features
 
 - 👤 User Registration & Login
-- 🛕 Browse Temple Information
-- 🎫 Darshan Ticket Booking
+- 🛕 Temple Information
+- 🎫 Darshan Booking
 - 📖 Booking History
 - 🚌 Journey Planner
 - 🔔 Notifications
-- 📱 Responsive User Interface
-- 🗄️ MongoDB Database Integration
-- ⚡ Fast and Secure MERN Architecture
+- 📱 Responsive UI
+- 🗄️ MongoDB Database
+- ⚡ MERN Stack Architecture
 
 ---
 
@@ -66,7 +65,6 @@ Darshan-Ease
 ├── Backend
 ├── Frontend
 ├── demo
-│   └── Demo.mp4
 ├── README.md
 └── package.json
 ```
@@ -93,13 +91,13 @@ cd Darshan-Ease
 npm install
 ```
 
-### Start Backend
+### Run Backend
 
 ```bash
 npm start
 ```
 
-### Start Frontend
+### Run Frontend
 
 ```bash
 npm run dev
@@ -107,11 +105,25 @@ npm run dev
 
 ---
 
+# 💻 Source Code
+
+📦 **Google Drive Source Code**
+
+🔗 **https://drive.google.com/file/d/1hvdIJ_arqvSM0VX93IHC_dNhHOmI3hHP/view?usp=drive_link**
+
+---
+
 # 🎥 Project Demo Video
 
-## ▶️ Watch the complete demo here
+▶️ **Watch the Demo Video**
 
-### 🔗 https://drive.google.com/file/d/1RbY05i_P-M8FwDugDARIzc1PsYKSY1qX/view?usp=sharing
+🔗 **https://drive.google.com/file/d/1RbY05i_P-M8FwDugDARIzc1PsYKSY1qX/view?usp=drive_link**
+
+---
+
+# 🌐 GitHub Repository
+
+🔗 **https://github.com/Tharun-720/Darshan-Ease**
 
 ---
 
@@ -136,10 +148,10 @@ npm run dev
 
 ---
 
-# 📄 License
+# 📜 License
 
 This project is developed for academic purposes as part of the Full Stack Development (MERN) curriculum.
 
 ---
 
-## ⭐ If you like this project, don't forget to Star this repository.
+## ⭐ If you found this project useful, please consider giving it a star.

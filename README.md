@@ -1,35 +1,35 @@
 # 🛕 DarshanEase
-### Smart Temple Darshan Booking System Using MERN Stack
+## Smart Temple Darshan Booking System Using MERN Stack
 
-![MERN](https://img.shields.io/badge/Stack-MERN-green)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-success)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![License](https://img.shields.io/badge/Status-Academic%20Project-orange)
+![MERN](https://img.shields.io/badge/MERN-Full%20Stack-success?style=for-the-badge)
+![React](https://img.shields.io/badge/React-JS-61DAFB?style=for-the-badge&logo=react)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
 
 ---
 
-# 📖 Project Overview
+# 📖 About the Project
 
-DarshanEase is a Full Stack MERN web application that simplifies temple darshan booking. It allows devotees to register, log in, explore temple details, book darshan tickets, and manage bookings through a modern and user-friendly interface.
+DarshanEase is a Full Stack MERN web application developed to simplify temple darshan booking. It provides devotees with a single platform to explore temples, book darshan tickets, plan their journey, and manage bookings through a modern, responsive interface.
 
 ---
 
 # ✨ Features
 
 - 👤 User Registration & Login
-- 🛕 Temple Listing
-- 📍 Temple Details
-- 🎫 Darshan Booking
+- 🛕 Browse Temple Information
+- 🎫 Darshan Ticket Booking
 - 📖 Booking History
 - 🚌 Journey Planner
 - 🔔 Notifications
-- 📱 Responsive Design
-- 🗄 MongoDB Database
+- 📱 Responsive User Interface
+- 🗄️ MongoDB Database Integration
+- ⚡ Fast and Secure MERN Architecture
 
 ---
 
-# 🛠 Technology Stack
+# 🛠️ Technology Stack
 
 ## Frontend
 - React.js
@@ -60,11 +60,11 @@ DarshanEase is a Full Stack MERN web application that simplifies temple darshan 
 
 # 📂 Project Structure
 
-```
+```text
 Darshan-Ease
 │
-├── Frontend
 ├── Backend
+├── Frontend
 ├── demo
 │   └── Demo.mp4
 ├── README.md
@@ -75,31 +75,31 @@ Darshan-Ease
 
 # 🚀 Installation
 
-Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Tharun-720/Darshan-Ease.git
 ```
 
-Go into the project folder
+### Go to Project
 
 ```bash
 cd Darshan-Ease
 ```
 
-Install dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start Backend
+### Start Backend
 
 ```bash
 npm start
 ```
 
-Start Frontend
+### Start Frontend
 
 ```bash
 npm run dev
@@ -107,9 +107,11 @@ npm run dev
 
 ---
 
-# 🎥 Demo Video
+# 🎥 Project Demo Video
 
-The complete project demo video is available inside the **demo** folder.
+## ▶️ Watch the complete demo here
+
+### 🔗 https://drive.google.com/file/d/1RbY05i_P-M8FwDugDARIzc1PsYKSY1qX/view?usp=sharing
 
 ---
 
@@ -123,16 +125,21 @@ The complete project demo video is available inside the **demo** folder.
 
 ---
 
-# ⭐ Future Enhancements
+# 🔮 Future Enhancements
 
-- Online Payment Gateway
-- QR Code Darshan Pass
-- Email & SMS Notifications
-- AI-Based Temple Recommendations
-- Live Crowd Status
+- 💳 Online Payment Gateway
+- 📱 Mobile Application
+- 📧 Email & SMS Notifications
+- 🤖 AI-Based Temple Recommendations
+- 📊 Admin Dashboard
+- 📍 Live Crowd Monitoring
 
 ---
 
 # 📄 License
 
-This project was developed for academic purposes as part of a Full Stack Development (MERN) project.
+This project is developed for academic purposes as part of the Full Stack Development (MERN) curriculum.
+
+---
+
+## ⭐ If you like this project, don't forget to Star this repository.
